@@ -33,3 +33,6 @@ class satellite:
         
     def eclipsed(self):
         return self.tle_parsed.eclipsed
+
+    def epoch(self):
+        return self.tle_parsed._epoch.datetime()
